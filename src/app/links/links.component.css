@@ -1,0 +1,21 @@
+.linkedln {
+  height:60px;
+  width: 60px;
+  position: fixed;
+  right: 0;
+  top:200px;
+}
+.github {
+  height:60px;
+  width: 60px;
+  position: fixed;
+  right: 0;
+  top:260px;
+}
+.gitlab {
+  height:60px;
+  width: 60px;
+  position: fixed;
+  right: 0;
+  top:320px;
+}
