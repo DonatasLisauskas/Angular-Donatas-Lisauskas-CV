@@ -1,5 +1,9 @@
 .about-container {
+  /*
   background-image: url("src/assets/pics/SDA.jpg");
+  */
+  /*background: black;*/
+  background-image: url("src/assets/pics/Balck02.jpg");
   display: flex;
   flex-direction: column;
 }
