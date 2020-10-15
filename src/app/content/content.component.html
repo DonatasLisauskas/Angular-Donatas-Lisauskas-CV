@@ -1,20 +1,24 @@
 <div class="information-section">
-  <p class="information-title-bold" style=" margin-top: 20px">{{title[0]}}</p>
-  <p class="information-title-2-bold">{{title2[0]}}</p>
-  <p class="information-title-3-italic">{{title3[0]}}</p>
-  <ul class="content-skills"><li>{{lecturesSDA}}</li></ul>
-  <p class="information-text-bold">{{textBold[0]}}</p>
-  <ul><li>{{achievementSDA}}</li></ul>
-  <p class="information-title-2-bold">{{title2[1]}}</p>
-  <p class="information-title-3-italic">{{title3[1]}}</p>
-  <div><hr></div>
-  <p class="information-title-bold">{{title[1]}}</p>
-  <p class="information-title-2-bold">{{title2[2]}}</p>
-  <p class="information-title-3-italic">{{title3[2]}}</p>
-  <p class="information-text-bold">{{textBold[1]}}</p>
-  <ul><li *ngFor="let resp of responsibilatiesWORK"># {{resp}}</li></ul>
-  <p class="information-text-bold">{{textBold[2]}}</p>
-  <ul><li *ngFor="let skillsWORK of developedSkillsWORK"># {{skillsWORK}}</li></ul>
-  <p class="information-text-bold">{{textBold[0]}}</p>
-  <ul><li style="padding-bottom: 25px"># {{achievementPIGU}}</li></ul>
+  <div>
+    <p class="information-title-bold" style=" margin-top: 20px">{{title[0]}}</p>
+    <p class="information-title-2-bold">{{title2[0]}}</p>
+    <p class="information-title-3-italic">{{title3[0]}}</p>
+    <ul class="content-skills"><li>{{lecturesSDA}}</li></ul>
+    <p class="information-text-bold">{{textBold[0]}}</p>
+    <ul><li>{{achievementSDA}}</li></ul>
+    <p class="information-title-2-bold">{{title2[1]}}</p>
+    <p class="information-title-3-italic">{{title3[1]}}</p>
+    <div><hr></div>
+  </div>
+  <div>
+    <p class="information-title-bold">{{title[1]}}</p>
+    <p class="information-title-2-bold">{{title2[2]}}</p>
+    <p class="information-title-3-italic">{{title3[2]}}</p>
+    <p class="information-text-bold">{{textBold[1]}}</p>
+    <ul><li *ngFor="let resp of responsibilatiesWORK"># {{resp}}</li></ul>
+    <p class="information-text-bold">{{textBold[2]}}</p>
+    <ul><li *ngFor="let skillsWORK of developedSkillsWORK"># {{skillsWORK}}</li></ul>
+    <p class="information-text-bold">{{textBold[0]}}</p>
+    <ul><li style="padding-bottom: 25px"># {{achievementPIGU}}</li></ul>
+  </div>
 </div>
