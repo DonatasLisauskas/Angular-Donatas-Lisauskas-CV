@@ -5,5 +5,5 @@ base = "/"
 
 [[redirects]]
 from = "/*"
-to = "/CV.html"
+to = "environments/index.html"
 status = 200
