@@ -1,9 +1,3 @@
-.about-container {
-  background-image: url("src/assets/pics/Balck02.jpg");
-  display: flex;
-  flex-direction: column;
-}
-
 .name-section {
   display: flex;
   justify-content: space-between;

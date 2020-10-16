@@ -3,6 +3,12 @@
   flex-direction: row;
 }
 
+.about-container {
+  background-image: url("src/assets/pics/Balck02.jpg");
+  display: flex;
+  flex-direction: column;
+}
+
 .information-section{
   flex-direction: column;
   background-color: aliceblue;
@@ -12,7 +18,7 @@
 }
 
 .skills-section {
-  background-color: mediumvioletred;
+  background-color: rebeccapurple;
   flex-direction: column;
   display: flex;
   margin:0;

@@ -16,7 +16,7 @@
 
 li {
   list-style-type: none;
-  color: black;
+  color: white;
   font-size: 25px;
   margin:10px 30px 0px 0px;
   text-align: justify;
@@ -27,13 +27,6 @@ li {
   font-style: italic;
   font-weight: bold;
   font-size: 25px;
-  margin: 20px 30px 0px 0px;
-  text-align: justify;
-}
-
-.information-text {
-  color: white;
-  font-size: 25px;
-  margin:10px 30px 0px 0px;
+  margin: 20px 30px 0px 30px;
   text-align: justify;
 }
