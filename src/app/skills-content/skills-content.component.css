@@ -1,0 +1,39 @@
+.linkStyle {
+  color: white;
+  font-weight: bold;
+  text-decoration:none;
+}
+
+.skills-text-bold {
+  color: white;
+  font-weight: bold;
+  font-size: 45px;
+  margin-left: 30px;
+  padding-top: 0px;
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
+
+li {
+  list-style-type: none;
+  color: black;
+  font-size: 25px;
+  margin:10px 30px 0px 0px;
+  text-align: justify;
+}
+
+.pbold{
+  color: white;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 25px;
+  margin: 20px 30px 0px 0px;
+  text-align: justify;
+}
+
+.information-text {
+  color: white;
+  font-size: 25px;
+  margin:10px 30px 0px 0px;
+  text-align: justify;
+}
