@@ -1,24 +1,55 @@
 <div>
   <div>
-    <p class="information-title-bold" style=" margin-top: 20px">{{title[0]}}</p>
-    <p class="information-title-2-bold">{{title2[0]}}</p>
-    <p class="information-title-3-italic">{{title3[0]}}</p>
-    <ul><li>{{lecturesSDA}}</li></ul>
-    <p class="information-text-bold">{{textBold[0]}}</p>
-    <ul><li>{{achievementSDA}}</li></ul>
-    <p class="information-title-2-bold">{{title2[1]}}</p>
-    <p class="information-title-3-italic">{{title3[1]}}</p>
-    <div><hr></div>
+    <div>
+      <div class="information-title-bold" style=" margin-top: 20px">{{title[0]}}</div>
+      <p target="_blank" style="cursor: pointer; margin-top: 20px"
+         (click)="initContentSDA()" class="information-title-2-bold">{{title2[0]}}</p>
+      <div class="information-title-3-italic">{{title3[0]}}</div>
+      <div *ngIf="showContentSDA" (click)="initContentSDA()" target="_blank" style="cursor: pointer">
+        <ul>
+          <li>{{lecturesSDA}}</li>
+        </ul>
+        <div class="information-text-bold">{{textBold[0]}}</div>
+        <ul>
+          <li># {{achievementSDA}}</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <p class="information-title-2-bold">{{title2[1]}}</p>
+      <div class="information-title-3-italic">{{title3[1]}}</div>
+      <div>
+        <hr>
+      </div>
+    </div>
   </div>
   <div>
-    <p class="information-title-bold">{{title[1]}}</p>
-    <p class="information-title-2-bold">{{title2[2]}}</p>
-    <p class="information-title-3-italic">{{title3[2]}}</p>
-    <p class="information-text-bold">{{textBold[1]}}</p>
-    <ul><li *ngFor="let resp of responsibilatiesWORK"># {{resp}}</li></ul>
-    <p class="information-text-bold">{{textBold[2]}}</p>
-    <ul><li *ngFor="let skillsWORK of developedSkillsWORK"># {{skillsWORK}}</li></ul>
-    <p class="information-text-bold">{{textBold[0]}}</p>
-    <ul><li style="padding-bottom: 25px"># {{achievementPIGU}}</li></ul>
+    <div class="information-title-bold">{{title[1]}}</div>
+    <p target="_blank" style="cursor: pointer" (click)="initContentPigu()"
+       class="information-title-2-bold">{{title2[2]}}</p>
+    <div class="information-title-3-italic">{{title3[2]}}</div>
+    <div *ngIf="showContentPigu" target="_blank" style="cursor: pointer" class="skill-container">
+      <button class="information-text-bold" target="_blank" style="cursor: pointer"
+         (click)="initResponsibilities()">{{textBold[1]}}</button>
+      <div *ngIf="showResponsibilities" (click)="initResponsibilities()">
+        <ul>
+          <li *ngFor="let resp of responsibilatiesWORK"># {{resp}}</li>
+        </ul>
+      </div>
+      <button class="information-text-bold" target="_blank" style="cursor: pointer"
+         (click)="initDevelopedSkills()">{{textBold[2]}}</button>
+      <div *ngIf="showDevelopedSkills" (click)="initDevelopedSkills()">
+        <ul>
+          <li *ngFor="let skillsWORK of developedSkillsWORK"># {{skillsWORK}}</li>
+        </ul>
+      </div>
+      <button class="information-text-bold" target="_blank" style="cursor: pointer"
+         (click)="initAchievements()">{{textBold[0]}}</button>
+      <div *ngIf="showAchievements" (click)="initAchievements()">
+        <ul>
+          <li style="padding-bottom: 25px"># {{achievementPIGU}}</li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>

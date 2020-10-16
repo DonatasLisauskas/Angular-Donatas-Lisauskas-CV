@@ -19,7 +19,7 @@ export class InformationComponent implements OnInit {
     '# Software Testing - TDD # Databases - SQL # JDBC, Hibernate # HTTP # HTML, CSS, JavaScript # Front-end ' +
     'Technologies # # Angular # JavaFX # Spring Framework # Agile. Scrum';
 
-  achievementSDA = '# Maintainer of the practical project CarFix';
+  achievementSDA = 'Maintainer of the practical project CarFix';
 
   achievementPIGU = 'Financial gain - By including a new or maintaining current customers I ' +
     'together with "Pigu - group" team reached 4 sales records which were achieved one after another';
@@ -32,6 +32,48 @@ export class InformationComponent implements OnInit {
 
   developedSkillsWORK: string[] = ['Communication and negotiation skills', 'Working with documentation', 'Detail orientation',
     'Analytical thinking', 'Team work', 'Empathy', 'Time and project management'];
+
+  showContentSDA = false;
+  showResponsibilities = false;
+  showDevelopedSkills = false;
+  showAchievements = false;
+  showContentPigu = false;
+
+  initContentSDA(): void {
+    if (!this.showContentSDA) {
+      this.showContentSDA = true;
+    } else {
+      this.showContentSDA = false;
+    }
+  }
+  initContentPigu(): void {
+    if (!this.showContentPigu) {
+      this.showContentPigu = true;
+    } else {
+      this.showContentPigu = false;
+    }
+  }
+  initResponsibilities(): void {
+    if (!this.showResponsibilities) {
+      this.showResponsibilities = true;
+    } else {
+      this.showResponsibilities = false;
+    }
+  }
+  initDevelopedSkills(): void {
+    if (!this.showDevelopedSkills) {
+      this.showDevelopedSkills = true;
+    } else {
+      this.showDevelopedSkills = false;
+    }
+  }
+  initAchievements(): void {
+    if (!this.showAchievements) {
+      this.showAchievements = true;
+    } else {
+      this.showAchievements = false;
+    }
+  }
 
   constructor() { }
 

@@ -1,41 +1,47 @@
 <div>
+  <app-links></app-links>
   <p class="skills-text-bold" style=" margin-top: 20px;">HOW TO CONTACT ME</p>
   <ul>
     <li># {{contacts.city}}</li>
     <li># {{contacts.email}}</li>
     <li># {{contacts.phone}}</li>
   </ul>
-  <p class="skills-text-bold">TECHNOLOGICAL SKILLS</p>
-  <div>
-    <p class="pbold">Languages:</p>
-    <ul><li *ngFor="let techL of techSkills.languages"># {{techL}}</li></ul>
+  <br>
+  <a [ngClass]="{'active-link' : showTechSkills}" target="_blank" style="cursor: pointer" (click)="toggleTechSkills()">TECHNOLOGICAL SKILLS</a>
+  <div *ngIf="showTechSkills" (click)="toggleTechSkills()">
+    <div>
+      <p class="pbold">Languages:</p>
+      <ul><li *ngFor="let techL of techSkills.languages"># {{techL}}</li></ul>
+    </div>
+    <div>
+      <p class="pbold">Databases:</p>
+      <ul><li *ngFor="let techD of techSkills.databases"># {{techD}}</li></ul>
+    </div>
+    <div>
+      <p class="pbold">Frameworks:</p>
+      <ul><li *ngFor="let techF of techSkills.frameworks"># {{techF}}</li></ul>
+    </div>
+    <div>
+      <p class="pbold">Other skills:</p>
+      <ul><li *ngFor="let techOS of techSkills.otherSkills"># {{techOS}}</li></ul>
+    </div>
+    <div>
+      <p class="pbold">Tools:</p>
+      <ul><li *ngFor="let techT of techSkills.tools"># {{techT}}</li></ul>
+    </div>
+    <div>
+      <p class="pbold">What I will learn in the future</p>
+      <ul><li *ngFor="let techF of techSkills.inFuture"># {{techF}}</li></ul>
+    </div>
   </div>
-  <div>
-    <p class="pbold">Databases:</p>
-    <ul><li *ngFor="let techD of techSkills.databases"># {{techD}}</li></ul>
+  <br><br>
+  <a target="_blank" style="cursor: pointer" (click)="initPersonalSkills()">PERSONALITY SKILLS</a>
+  <div *ngIf="showPersonalSkills" (click)="initPersonalSkills()">
+      <ul><li *ngFor="let perS of personalSkills"># {{perS}}</li></ul>
   </div>
-  <div>
-    <p class="pbold">Frameworks:</p>
-    <ul><li *ngFor="let techF of techSkills.frameworks"># {{techF}}</li></ul>
-  </div>
-  <div>
-    <p class="pbold">Other skills:</p>
-    <ul><li *ngFor="let techOS of techSkills.otherSkills"># {{techOS}}</li></ul>
-  </div>
-  <div>
-    <p class="pbold">Tools:</p>
-    <ul><li *ngFor="let techT of techSkills.tools"># {{techT}}</li></ul>
-  </div>
-  <div>
-    <p class="pbold">What I will learn in the future</p>
-    <ul><li *ngFor="let techF of techSkills.inFuture"># {{techF}}</li></ul>
-  </div>
-  <div>
-    <p class="skills-text-bold">PERSONALITY SKILLS</p>
-    <ul><li *ngFor="let perS of personalSkills"># {{perS}}</li></ul>
-  </div>
-  <div style="padding-bottom: 40px">
-    <p class="skills-text-bold">LANGUAGES</p>
-    <ul><li *ngFor="let lang of languages"># {{lang}}</li></ul>
+  <br><br>
+  <a target="_blank" style="cursor: pointer" (click)="initLanguages()">LANGUAGES</a>
+  <div *ngIf="showLanguages" (click)="initLanguages()">
+      <ul style="padding-bottom: 40px"><li *ngFor="let lang of languages"># {{lang}}</li></ul>
   </div>
 </div>
