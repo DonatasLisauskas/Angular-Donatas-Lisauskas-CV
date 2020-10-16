@@ -1,0 +1,57 @@
+.information-section{
+  flex-direction: column;
+  background-color: aliceblue;
+  display: flex;
+  margin:0;
+  width: 60%;
+}
+
+.information-title-bold {
+  color: Black;
+  font-weight: bold;
+  font-size: 45px;
+  margin-left: 30px;
+  padding-top: 0px;
+  margin-top: 50px;
+  margin-bottom: 0px;  /*education*/
+}
+.information-title-2-bold {
+  color: mediumvioletred;
+  font-weight: bold;
+  font-size: 40px;
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 0px;   /*sda*/
+}
+
+.information-title-3-italic {
+  color: mediumvioletred;
+  font-style: italic;
+  font-size: 25px;
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 0px; /*java remote 365*/
+}
+
+ul {
+  list-style-type: none;
+  color: black;
+  font-size: 25px;
+  margin:10px 30px 0px 0px;
+  padding-left: 30px;
+  text-align: justify;
+}
+
+.information-text-bold {
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+  margin: 10px 30px 0px 30px;
+  text-align: justify;
+}
+
+hr {
+  display: flex;
+  border-top: 4px solid black;
+  margin-top: 40px;
+}
