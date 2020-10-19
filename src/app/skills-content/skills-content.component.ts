@@ -20,8 +20,7 @@ export class SkillsContentComponent implements OnInit {
   };
 
   personalSkills = ['Thoroughness', 'Creativity Skills', 'Goal-orientation', 'Analytical thinking',
-    'Teamwork', 'Time Management', 'Communication', 'Problem Solving', 'Responsibility',
-    'Diligence', 'Helpfulness', 'Persistence'];
+    'Teamwork', 'Time Management', 'Communication', 'Problem Solving', 'Responsibility', 'Helpfulness', 'Persistence'];
 
   languages = ['Lithuanian - Native', 'English - B2 / C1'];
 
