@@ -1,55 +1,66 @@
 <div>
   <div>
-    <div>
-      <div class="information-title-bold" style=" margin-top: 20px">{{title[0]}}</div>
-      <p target="_blank" style="cursor: pointer; margin-top: 20px"
-         (click)="initContentSDA()" class="information-title-2-bold">{{title2[0]}}</p>
-      <div class="information-title-3-italic">{{title3[0]}}</div>
-      <div *ngIf="showContentSDA" (click)="initContentSDA()" target="_blank" style="cursor: pointer">
-        <ul>
-          <li>{{lecturesSDA}}</li>
-        </ul>
-        <div class="information-text-bold">{{textBold[0]}}</div>
-        <ul>
-          <li># {{achievementSDA}}</li>
-        </ul>
-      </div>
-    </div>
-    <div>
-      <p class="information-title-2-bold">{{title2[1]}}</p>
-      <div class="information-title-3-italic">{{title3[1]}}</div>
-      <div>
-        <hr>
-      </div>
+    <p class="information-title-bold" style=" margin-top: 20px">EDUCATION</p>
+    <button [ngClass]="{'button-Position-active-link' : showContentSDA}" target="_blank"
+            style="cursor: pointer; margin-top: 20px"
+            (click)="toggleContentSDA()" class="button-Position">Software Development Academy
+    </button>
+    <p class="information-title-3-italic">Full - Stack of Java (353 hours) | Apr 2020 - Feb 2021</p>
+  </div>
+  <div *ngIf="showContentSDA" target="_blank" style="cursor: pointer">
+    <ul (click)="toggleContentSDA()">
+      <li>{{lecturesSDA}}</li>
+    </ul>
+    <p [ngClass]="{'button-Description-active-link' : showAchievements2}" class="button-Description"
+       target="_blank" style="cursor: pointer"
+       (click)="toggleAchievements2()">Achievements:</p>
+    <div *ngIf="showAchievements2">
+      <ul (click)="toggleAchievements2()">
+        <li># {{achievementSDA}}</li>
+      </ul>
     </div>
   </div>
+</div>
+<div>
+  <p class="information-title-2-bold">Kaunas University of Technology</p>
+  <p class="information-title-3-italic">Bachelor's degree Food science and technologies | Sep 2014 - Jun 2018</p>
+  <hr>
+</div>
+
+
+<div>
   <div>
-    <div class="information-title-bold">{{title[1]}}</div>
-    <p target="_blank" style="cursor: pointer" (click)="initContentPigu()"
-       class="information-title-2-bold">{{title2[2]}}</p>
-    <div class="information-title-3-italic">{{title3[2]}}</div>
-    <div *ngIf="showContentPigu" target="_blank" style="cursor: pointer" class="skill-container">
-      <button class="information-text-bold" target="_blank" style="cursor: pointer"
-         (click)="initResponsibilities()">{{textBold[1]}}</button>
-      <div *ngIf="showResponsibilities" (click)="initResponsibilities()">
-        <ul>
-          <li *ngFor="let resp of responsibilatiesWORK"># {{resp}}</li>
-        </ul>
-      </div>
-      <button class="information-text-bold" target="_blank" style="cursor: pointer"
-         (click)="initDevelopedSkills()">{{textBold[2]}}</button>
-      <div *ngIf="showDevelopedSkills" (click)="initDevelopedSkills()">
-        <ul>
-          <li *ngFor="let skillsWORK of developedSkillsWORK"># {{skillsWORK}}</li>
-        </ul>
-      </div>
-      <button class="information-text-bold" target="_blank" style="cursor: pointer"
-         (click)="initAchievements()">{{textBold[0]}}</button>
-      <div *ngIf="showAchievements" (click)="initAchievements()">
-        <ul>
-          <li style="padding-bottom: 25px"># {{achievementPIGU}}</li>
-        </ul>
-      </div>
+    <div class="information-title-bold">WORK EXPERIENCE</div>
+  </div>
+
+  <button target="_blank" style="cursor: pointer" (click)="toggleContentPigu()"
+          class="button-Position">Sales Manager
+  </button>
+  <div class="information-title-3-italic">UAB "Pigu.lt" | Aug 2018 - Sept 2020</div>
+  <div *ngIf="showContentPigu" target="_blank" style="cursor: pointer" class="skill-container">
+    <button class="information-text-bold" target="_blank" style="cursor: pointer"
+            (click)="toggleResponsibilities()">Responsibilities:
+    </button>
+    <div *ngIf="showResponsibilities" (click)="toggleResponsibilities()">
+      <ul>
+        <li *ngFor="let resp of responsibilatiesWORK"># {{resp}}</li>
+      </ul>
+    </div>
+    <button class="information-text-bold" target="_blank" style="cursor: pointer"
+            (click)="toggleDevelopedSkills()">Developed skills:
+    </button>
+    <div *ngIf="showDevelopedSkills" (click)="toggleDevelopedSkills()">
+      <ul>
+        <li *ngFor="let skillsWORK of developedSkillsWORK"># {{skillsWORK}}</li>
+      </ul>
+    </div>
+    <button class="information-text-bold" target="_blank" style="cursor: pointer"
+            (click)="toggleAchievements()">Achievements:
+    </button>
+    <div *ngIf="showAchievements" (click)="toggleAchievements()">
+      <ul>
+        <li style="padding-bottom: 25px"># {{achievementPIGU}}</li>
+      </ul>
     </div>
   </div>
 </div>

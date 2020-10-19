@@ -7,14 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InformationComponent implements OnInit {
 
-  title: string[] = ['EDUCATION', 'WORK EXPERIENCE'];
-
-  title2: string[] = ['Software Development Academy', 'Kaunas University of Technology', 'Sales Manager'];
-
-  title3: string[] = ['Full - Stack of Java (353 hours) | Apr 2020 - Feb 2021',
-    'Bachelor\'s degree Food science and technologies | Sep 2014 - Jun 2018',
-    'UAB "Pigu.lt" | Aug 2018 - Sept 2020' ];
-
   lecturesSDA = '# Java # GIT # Coding # Design Patterns & Good Practices # Algorithms ' +
     '# Software Testing - TDD # Databases - SQL # JDBC, Hibernate # HTTP # HTML, CSS, JavaScript # Front-end ' +
     'Technologies # # Angular # JavaFX # Spring Framework # Agile. Scrum';
@@ -37,45 +29,31 @@ export class InformationComponent implements OnInit {
   showResponsibilities = false;
   showDevelopedSkills = false;
   showAchievements = false;
+  showAchievements2 = false;
   showContentPigu = false;
 
-  initContentSDA(): void {
-    if (!this.showContentSDA) {
-      this.showContentSDA = true;
-    } else {
-      this.showContentSDA = false;
-    }
+  toggleContentSDA(): void {
+    this.showContentSDA = !this.showContentSDA;
   }
-  initContentPigu(): void {
-    if (!this.showContentPigu) {
-      this.showContentPigu = true;
-    } else {
-      this.showContentPigu = false;
-    }
+  toggleContentPigu(): void {
+    this.showContentPigu = !this.showContentPigu;
   }
-  initResponsibilities(): void {
-    if (!this.showResponsibilities) {
-      this.showResponsibilities = true;
-    } else {
-      this.showResponsibilities = false;
-    }
+  toggleResponsibilities(): void {
+    this.showResponsibilities = !this.showResponsibilities;
   }
-  initDevelopedSkills(): void {
-    if (!this.showDevelopedSkills) {
-      this.showDevelopedSkills = true;
-    } else {
-      this.showDevelopedSkills = false;
-    }
+  toggleDevelopedSkills(): void {
+    this.showDevelopedSkills = !this.showDevelopedSkills;
   }
-  initAchievements(): void {
-    if (!this.showAchievements) {
-      this.showAchievements = true;
-    } else {
-      this.showAchievements = false;
-    }
+  toggleAchievements(): void {
+    this.showAchievements = !this.showAchievements;
   }
 
-  constructor() { }
+  toggleAchievements2(): void {
+    this.showAchievements2 = !this.showAchievements2;
+  }
+
+
+  constructor() {}
 
   ngOnInit(): void {
   }

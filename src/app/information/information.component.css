@@ -5,7 +5,7 @@
   margin-left: 30px;
   padding-top: 0px;
   margin-top: 50px;
-  margin-bottom: 0px;  /*education*/
+  margin-bottom: 0px;
 }
 .information-title-2-bold {
   color: rebeccapurple;
@@ -13,7 +13,7 @@
   font-size: 40px;
   margin-left: 30px;
   margin-top: 10px;
-  margin-bottom: 0px;   /*sda*/
+  margin-bottom: 0px;
 }
 
 .information-title-3-italic {
@@ -22,7 +22,7 @@
   font-size: 25px;
   margin-left: 30px;
   margin-top: 10px;
-  margin-bottom: 0px; /*java remote 365*/
+  margin-bottom: 0px;
 }
 
 ul {
@@ -32,17 +32,6 @@ ul {
   margin:10px 30px 0px 0px;
   padding-left: 30px;
   text-align: justify;
-}
-
-.information-text-bold {
-  color: black;
-  font-weight: bold;
-  font-size: 25px;
-  margin: 10px 30px 0px 30px;
-  padding-bottom: 30px;
-  text-align: justify;
-  background: transparent;
-  border: none;
 }
 
 .skill-container {
@@ -56,17 +45,55 @@ hr {
   margin-top: 40px;
 }
 
-p:hover {
+.button-Position {
+  color: rebeccapurple;
+  font-weight: bold;
+  font-size: 40px;
+  padding-left: 0px;
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  background: transparent;
+  border: none;
+}
+
+.button-Position:hover {
   color: mediumspringgreen;
   font-size: 45px;
 }
 
-button:hover {
+.button-Position:focus {
+  border: none;
+  outline:none;
+}
+
+.button-Position-active-link {
+  color: mediumspringgreen;
+  font-size: 45px;
+}
+
+.button-Description {
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+  margin: 10px 30px 0px 30px;
+  text-align: justify;
+  background: transparent;
+  border: none;
+}
+
+.button-Description:hover {
   color: mediumspringgreen;
   font-size: 30px;
 }
 
-button:focus {
+.button-Description:focus {
   border: none;
   outline:none;
 }
+.button-Description-active-link {
+  color: mediumspringgreen;
+  font-size: 30px;
+}
+
+
