@@ -31,22 +31,12 @@ export class SkillsContentComponent implements OnInit {
   toggleTechSkills(): void {
     this.showTechSkills = !this.showTechSkills;
   }
-  initPersonalSkills(): void {
-    if (!this.showPersonalSkills) {
-      this.showPersonalSkills = true;
-    } else {
-      this.showPersonalSkills = false;
-    }
+  togglePersonalSkills(): void {
+  this.showPersonalSkills = !this.showPersonalSkills;
   }
-  initLanguages(): void {
-    if (!this.showLanguages) {
-      this.showLanguages = true;
-    } else {
-      this.showLanguages = false;
-    }
+  toggleLanguages(): void {
+    this.showLanguages = !this.showLanguages;
   }
-
-
 
   constructor() {
   }

@@ -19,3 +19,8 @@
   right: 0;
   top:360px;
 }
+
+img:hover {
+  height:70px;
+  width: 70px;
+}
