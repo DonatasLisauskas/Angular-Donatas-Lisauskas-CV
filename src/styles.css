@@ -5,4 +5,5 @@ body{
 *{
   font-family: "Segoe UI Light";
   box-sizing: border-box;
+  align-items:stretch;
 }
