@@ -18,7 +18,7 @@ export class InformationComponent implements OnInit {
 
   textBold: string[] = ['Achievements:', 'Responsibilities:', 'Developed skills:'];
 
-  responsibilatiesWORK: string[] = ['Submitting and carrying out of orders', 'Customer service',
+  responsibilitiesWORK: string[] = ['Submitting and carrying out of orders', 'Customer service',
     'Sales and goods management by Navision program', 'SalesForce', 'Increasing sales',
     'Solving of problem orders', 'After-sales service'];
 
@@ -28,8 +28,8 @@ export class InformationComponent implements OnInit {
   showContentSDA = false;
   showResponsibilities = false;
   showDevelopedSkills = false;
-  showAchievements = false;
-  showAchievements2 = false;
+  showAchievementsPIGU = false;
+  showAchievementSDA = false;
   showContentPigu = false;
 
   toggleContentSDA(): void {
@@ -45,11 +45,11 @@ export class InformationComponent implements OnInit {
     this.showDevelopedSkills = !this.showDevelopedSkills;
   }
   toggleAchievements(): void {
-    this.showAchievements = !this.showAchievements;
+    this.showAchievementsPIGU = !this.showAchievementsPIGU;
   }
 
   toggleAchievements2(): void {
-    this.showAchievements2 = !this.showAchievements2;
+    this.showAchievementSDA = !this.showAchievementSDA;
   }
 
 
