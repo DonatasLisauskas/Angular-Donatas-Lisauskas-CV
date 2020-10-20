@@ -3,6 +3,8 @@
   font-weight: bold;
   font-size: 30px;
   -webkit-transition: all 0.5s ease;
+  cursor: pointer;
+
 }
 
 .nav-item:hover > a {
@@ -10,11 +12,11 @@
   font-weight: bold;
   -webkit-transition: all 0.8s ease;
 }
-.isActive > a {
+/*.navbar > a {
   color: mediumspringgreen;
   font-size: 35px;
   transition: all 0.5s ease;
-}
+}*/
 
 
 .black { background-color: black }

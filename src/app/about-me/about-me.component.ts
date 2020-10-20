@@ -10,7 +10,6 @@ export class AboutMeComponent implements OnInit {
   name = 'DONATAS';
   lastName = 'LISAUSKAS';
   title = 'ENTRY LEVEL (JUNIOR) FULL-STACK DEVELOPER OF JAVA';
-  title2 = 'ABOUT ME';
 
   aboutMe = 'I am a constantly learning person who keeps seeking opportunities to improve the\n' +
     '        skills of an IT specialist.\n' +
