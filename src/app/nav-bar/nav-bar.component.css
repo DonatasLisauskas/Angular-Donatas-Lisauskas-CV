@@ -1,22 +1,23 @@
-.nav-item > a {
+.item {
   color: rebeccapurple;
   font-weight: bold;
   font-size: 30px;
+  margin-left: 20px;
   -webkit-transition: all 0.5s ease;
   cursor: pointer;
-
 }
 
-.nav-item:hover > a {
+.item:hover {
   color: mediumspringgreen;
   font-weight: bold;
+  text-decoration: none;
   -webkit-transition: all 0.8s ease;
 }
-/*.navbar > a {
+.itemVisited {
   color: mediumspringgreen;
-  font-size: 35px;
+
   transition: all 0.5s ease;
-}*/
+}
 
 
 .black { background-color: black }
