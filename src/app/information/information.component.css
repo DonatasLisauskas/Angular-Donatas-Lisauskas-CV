@@ -56,12 +56,12 @@ hr {
   margin-bottom: 0px;
   background: transparent;
   border: none;
-  transition: font 0.25s ease-in;
 }
 
 .button-Position:hover {
   color: mediumspringgreen;
-  font-size: 45px;
+  transition: all 0.25s ease;
+  -webkit-transition: all 0.5s ease;
 }
 
 .button-Position:focus {
@@ -83,12 +83,12 @@ hr {
   text-align: justify;
   background: transparent;
   border: none;
-  transition: font 0.25s ease-in;
 }
 
 .button-Description:hover {
   color: mediumspringgreen;
-  font-size: 30px;
+  transition: all 0.25s ease;
+  -webkit-transition: all 0.5s ease;
 }
 
 .button-Description:focus {
