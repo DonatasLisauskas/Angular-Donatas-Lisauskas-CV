@@ -1,0 +1,20 @@
+.nav-item > a {
+  color: rebeccapurple;
+  font-weight: bold;
+  font-size: 30px;
+  -webkit-transition: all 0.5s ease;
+}
+
+.nav-item:hover > a {
+  color: mediumspringgreen;
+  font-weight: bold;
+  -webkit-transition: all 0.8s ease;
+}
+.isActive > a {
+  color: mediumspringgreen;
+  font-size: 35px;
+  transition: all 0.5s ease;
+}
+
+
+.black { background-color: black }
