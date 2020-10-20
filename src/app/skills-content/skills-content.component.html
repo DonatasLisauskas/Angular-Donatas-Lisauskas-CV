@@ -39,7 +39,7 @@
   <div *ngIf="showPersonalSkills" (click)="togglePersonalSkills()" target="_blank" style="cursor: pointer">
       <ul><li *ngFor="let perS of personalSkills"># {{perS}}</li></ul>
   </div>
-  <button [ngClass]="{'showLanguages' : showLanguages}" target="_blank" style="cursor: pointer"
+  <button [ngClass]="{'active-link' : showLanguages}" target="_blank" style="cursor: pointer"
           (click)="toggleLanguages()">LANGUAGES</button>
   <div *ngIf="showLanguages" (click)="toggleLanguages()" target="_blank" style="cursor: pointer">
       <ul style="padding-bottom: 40px"><li *ngFor="let lang of languages"># {{lang}}</li></ul>
