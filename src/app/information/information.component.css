@@ -60,7 +60,6 @@ hr {
 
 .button-Position:hover {
   color: mediumspringgreen;
-  transition: all 0.25s ease;
   -webkit-transition: all 0.5s ease;
 }
 
@@ -72,6 +71,7 @@ hr {
 .button-Position-active-link {
   color: mediumspringgreen;
   font-size: 45px;
+  transition: all 0.25s ease;
 }
 
 .button-Description {
@@ -87,7 +87,6 @@ hr {
 
 .button-Description:hover {
   color: mediumspringgreen;
-  transition: all 0.25s ease;
   -webkit-transition: all 0.5s ease;
 }
 
@@ -98,6 +97,7 @@ hr {
 .button-Description-active-link {
   color: mediumspringgreen;
   font-size: 30px;
+  transition: all 0.25s ease;
 }
 
 
