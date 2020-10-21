@@ -1,9 +1,63 @@
-.nav-item > a { color: rebeccapurple; font-size: 25px; margin-left: 10px}
-.nav-item.active > a { color: mediumspringgreen; transition: all 0.5s ease; font-size: 28px; font-weight: bold }
-.nav-item:hover > a { color: mediumspringgreen; -webkit-transition: all 0.8s ease; font-weight: bold }
-.black { background-color: black}
-.navbar-toggler {
-  outline:mediumspringgreen;
-  outline-style: solid;
+.nav-item > a {
+  color: rebeccapurple;
+  font-size: 25px;
+  margin-left: 10px
 }
-.navbar-text{color:mediumspringgreen}
+
+.nav-item.active > a {
+  color: mediumspringgreen;
+  transition: all 0.5s ease;
+  font-size: 28px;
+  font-weight: bold
+}
+
+.nav-item:hover > a {
+  color: mediumspringgreen;
+  -webkit-transition: all 0.8s ease;
+  font-weight: bold
+}
+
+.black {
+  background-color: black
+}
+
+
+.navbar-text {
+  color: mediumspringgreen
+}
+
+.navbar-toggler {
+  outline: black;
+  border-color: black;
+}
+
+svg {
+  fill: rebeccapurple;
+}
+
+svg:hover {
+  fill: mediumspringgreen;
+  -webkit-transition: all 0.8s ease;
+}
+
+svg:visited{
+  fill: mediumspringgreen;
+}
+
+@media screen and (max-width: 992px) {
+  .social-links-container {
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .nav-item > a {
+    font-size: 18px;
+  }
+  .nav-item.active > a {
+    font-size: 18px;
+  }
+  .header-container {
+    justify-content: space-between;
+  }
+}

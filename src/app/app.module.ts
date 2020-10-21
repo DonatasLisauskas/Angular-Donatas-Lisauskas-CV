@@ -1,9 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
 import { AboutMeComponent } from './about-me/about-me.component';
-import { LinksComponent } from './links/links.component';
 import { SkillsContentComponent } from './skills-content/skills-content.component';
 import { InformationComponent } from './information/information.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
@@ -13,7 +11,6 @@ import {RouterModule} from '@angular/router';
   declarations: [
     AppComponent,
     AboutMeComponent,
-    LinksComponent,
     SkillsContentComponent,
     InformationComponent,
     NavBarComponent,
@@ -25,7 +22,7 @@ import {RouterModule} from '@angular/router';
         {path: 'about-me', component: AboutMeComponent},
         {path: 'information-component', component: InformationComponent },
         {path: 'tech-skills', component: SkillsContentComponent},
-        {path: '**', redirectTo: 'aboutMe', pathMatch: 'full'},
+        {path: '**', redirectTo: 'about-me', pathMatch: 'full'},
       ])
   ],
   providers: [],
