@@ -1,3 +1,11 @@
+.information-section{
+  flex-direction: column;
+  background-color: aliceblue;
+  display: flex;
+  margin:0;
+  width: 60%;
+}
+
 .information-title-bold {
   color: Black;
   font-weight: bold;

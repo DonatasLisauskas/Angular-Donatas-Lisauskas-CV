@@ -7,6 +7,7 @@ import { LinksComponent } from './links/links.component';
 import { SkillsContentComponent } from './skills-content/skills-content.component';
 import { InformationComponent } from './information/information.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import {RouterModule} from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,13 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
     NavBarComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(
+      [
+        {path: 'aboutMe', component: AboutMeComponent},
+        {path: 'informationComponent', component: InformationComponent },
+        {path: '**', redirectTo: 'aboutMe', pathMatch: 'full'},
+      ])
   ],
   providers: [],
   bootstrap: [AppComponent]

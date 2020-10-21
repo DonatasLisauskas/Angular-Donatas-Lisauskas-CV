@@ -1,23 +1,9 @@
-.item {
-  color: rebeccapurple;
-  font-weight: bold;
-  font-size: 30px;
-  margin-left: 20px;
-  -webkit-transition: all 0.5s ease;
-  cursor: pointer;
+.nav-item > a { color: rebeccapurple; font-size: 25px; margin-left: 10px}
+.nav-item.active > a { color: mediumspringgreen; transition: all 0.5s ease; font-size: 28px; font-weight: bold }
+.nav-item:hover > a { color: mediumspringgreen; -webkit-transition: all 0.8s ease; font-weight: bold }
+.black { background-color: black}
+.navbar-toggler {
+  outline:mediumspringgreen;
+  outline-style: solid;
 }
-
-.item:hover {
-  color: mediumspringgreen;
-  font-weight: bold;
-  text-decoration: none;
-  -webkit-transition: all 0.8s ease;
-}
-.itemVisited {
-  color: mediumspringgreen;
-
-  transition: all 0.5s ease;
-}
-
-
-.black { background-color: black }
+.navbar-text{color:mediumspringgreen}
