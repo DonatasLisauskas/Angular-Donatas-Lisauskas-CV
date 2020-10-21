@@ -1,16 +1,17 @@
+
 .information-section{
   flex-direction: column;
   background-color: aliceblue;
   display: flex;
-  margin:0;
-  width: 60%;
+  padding-top: 80px;
+  padding-left:180px;
+  padding-right: 180px;
 }
 
 .information-title-bold {
   color: Black;
   font-weight: bold;
   font-size: 45px;
-  margin-left: 30px;
   padding-top: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -19,7 +20,6 @@
   color: rebeccapurple;
   font-weight: bold;
   font-size: 40px;
-  margin-left: 30px;
   margin-top: 10px;
   margin-bottom: 0px;
 }
@@ -28,7 +28,6 @@
   color: rebeccapurple;
   font-style: italic;
   font-size: 25px;
-  margin-left: 30px;
   margin-top: 10px;
   margin-bottom: 0px;
 }
@@ -37,8 +36,7 @@ ul {
   list-style-type: none;
   color: black;
   font-size: 25px;
-  margin:10px 30px 0px 0px;
-  padding-left: 30px;
+  margin-top: 10px;
   text-align: justify;
 }
 
@@ -59,7 +57,6 @@ hr {
   font-weight: bold;
   font-size: 40px;
   padding-left: 0px;
-  margin-left: 30px;
   margin-top: 10px;
   margin-bottom: 0px;
   background: transparent;
@@ -86,7 +83,7 @@ hr {
   color: black;
   font-weight: bold;
   font-size: 25px;
-  margin: 10px 30px 0px 30px;
+  margin-top: 10px;
   padding-left: 0px;
   text-align: justify;
   background: transparent;

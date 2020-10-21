@@ -1,30 +1,37 @@
+.skills-section {
+  background-color: rebeccapurple;
+  flex-direction: column;
+  display: flex;
+  padding-top: 80px;
+  padding-left:180px;
+  padding-right: 180px;
+}
 .linkStyle {
-  color: white;
+  color: aliceblue;
   font-weight: bold;
   text-decoration:none;
 }
 
 .skills-text-bold {
-  color: white;
+  color: aliceblue;
   font-weight: bold;
   font-size: 45px;
-  margin-left: 30px;
   padding-top: 0px;
   margin-top: 40px;
   margin-bottom: 0px;
 }
 
 button {
-  color: white;
+  color: aliceblue;
   font-weight: bold;
   font-size: 45px;
-  margin-left: 30px;
   margin-top: 15px;
   margin-bottom: 15px;
   background: transparent;
   border: none;
+  cursor: pointer;
+  padding: 0;
 }
-
 button:hover {
   color: mediumspringgreen;
   -webkit-transition: all 0.8s ease;
@@ -48,17 +55,18 @@ ul {
 
 li {
   list-style-type: none;
-  color: white;
+  color: aliceblue;
   font-size: 25px;
-  margin:0px 30px 10px 0px;
+  margin-top: 0px;
+  margin-bottom: 10px;
   text-align: justify;
 }
 
 .pbold{
-  color: white;
+  color: aliceblue;
   font-style: italic;
   font-weight: bold;
   font-size: 25px;
-  margin: 0px 30px 0px 30px;
+  margin: 0;
   text-align: justify;
 }

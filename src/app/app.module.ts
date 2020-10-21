@@ -22,8 +22,9 @@ import {RouterModule} from '@angular/router';
     BrowserModule,
     RouterModule.forRoot(
       [
-        {path: 'aboutMe', component: AboutMeComponent},
-        {path: 'informationComponent', component: InformationComponent },
+        {path: 'about-me', component: AboutMeComponent},
+        {path: 'information-component', component: InformationComponent },
+        {path: 'tech-skills', component: SkillsContentComponent},
         {path: '**', redirectTo: 'aboutMe', pathMatch: 'full'},
       ])
   ],

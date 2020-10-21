@@ -9,10 +9,3 @@
   flex-direction: column;
 }
 
-.skills-section {
-  background-color: rebeccapurple;
-  flex-direction: column;
-  display: flex;
-  margin:0;
-  width: 40%;
-}
