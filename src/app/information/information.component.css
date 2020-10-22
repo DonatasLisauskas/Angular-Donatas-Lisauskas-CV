@@ -5,10 +5,10 @@
   padding-top: 80px;
   padding-left:10%;
   padding-right: 10%;
-  /*position: absolute;*/
-  position: initial;
+  position: absolute;
   width: 100%;
   height: 100%;
+  overflow: auto;
 }
 
 .information-title-bold {
@@ -145,21 +145,6 @@ hr {
     font-size: 20px;
   }
 }
-@media screen and (max-width: 861px) {
-  .information-section{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-  }
-}
-@media screen and (max-height: 800px) {
-  .information-section{
-    position: initial;
-    width: 100%;
-    height: 100%;
-  }
-}
-
 @media screen and (max-width: 450px) {
   .information-title-bold {
     font-size: 25px;
@@ -168,10 +153,10 @@ hr {
     font-size: 20px;
   }
   .information-title-3-italic {
-    font-size: 10px;
+    font-size: 15px;
   }
   ul {
-    font-size: 10px;
+    font-size: 15px;
   }
   .button-Position {
     font-size: 20px;
@@ -180,10 +165,10 @@ hr {
     font-size: 22px;
   }
   .button-Description {
-    font-size: 10px;
+    font-size: 15px;
   }
   .button-Description-active-link {
-    font-size: 12px;
+    font-size: 17px;
   }
 }
 
