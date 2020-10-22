@@ -5,6 +5,8 @@
   padding-top: 80px;
   padding-left:10%;
   padding-right: 10%;
+  position: absolute;
+  width: 100%;
 }
 
 .information-title-bold {
