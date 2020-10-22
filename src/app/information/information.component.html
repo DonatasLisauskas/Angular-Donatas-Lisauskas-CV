@@ -34,7 +34,7 @@
         <p class="information-title-bold">WORK EXPERIENCE</p>
         <button [ngClass]="{'button-Position-active-link' : showContentPigu}" target="_blank" style="cursor: pointer" (click)="toggleContentPigu()"
                 class="button-Position">Sales Manager</button>
-        <p class="information-title-3-italic">UAB "Pigu.lt" | Aug 2018 - Sept 2020</p>
+        <p class="information-title-3-italic" [ngClass]="{'text-top-off' : !showContentPigu}" >UAB "Pigu.lt" | Aug 2018 - Sept 2020</p>
       </div>
       <div *ngIf="showContentPigu" class="skill-container">
         <div>

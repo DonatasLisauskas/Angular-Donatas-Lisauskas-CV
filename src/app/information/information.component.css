@@ -112,6 +112,10 @@ hr {
   transition: all 0.5s ease;
 }
 
+.text-top-off {
+  margin-bottom: 8%;
+}
+
 @media screen and (max-width: 992px) {
   .information-title-bold {
     font-size: 35px;
