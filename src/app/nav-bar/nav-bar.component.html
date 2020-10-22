@@ -1,8 +1,8 @@
 <header>
   <nav class="navbar navbar-expand-lg navbar-dark black fixed-top d-flex justify-content-between header-container ">
+
     <div class="d-flex ">
-      <a class="navbar-brand" [routerLink]="['/about-me']"><img src="/assets/pics/159835266580050642.png" height="50"
-                                                                width="50"></a>
+      <a class="navbar-brand" [routerLink]="['/about-me']"><img src="/assets/pics/159835266580050642.png" height="50" width="50"></a>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav nav-bar-content ">
           <li class="nav-item" [routerLinkActive]="['active']">
@@ -14,21 +14,22 @@
           <li class="nav-item" [routerLinkActive]="['active']">
             <a class="nav-link" [routerLink]="['/tech-skills']">TECHNOLOGICAL SKILLS</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-               aria-haspopup="true" aria-expanded="false">
-              Dropdown link
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
+          <li class="nav-item" [routerLinkActive]="['active']">
+            <a class="nav-link" [routerLink]="['/contacts']" (click)="toogleShowContacts()">CONTACTS</a>
           </li>
         </ul>
+        <!--<div class="d-flex " *ngIf="showLinksInBurger">
+          <ul class="navbar-nav ">
+            <li class="nav-link"><a style="font-size: 20px; color: rebeccapurple">Kaunas, Lithuania</a></li>
+            <li class="nav-link"><a style="font-size: 20px; color: rebeccapurple">donliskas@gmail.com</a></li>
+            <li class="nav-link"><a style="font-size: 20px; color: rebeccapurple">+37063855525</a></li>
+          </ul>
+        </div>-->
       </div>
     </div>
+
     <div class="d-flex " *ngIf="showLinksInBurger">
+
       <ul class="navbar-nav social-links-container">
         <li class="nav-item">
           <a href="https://www.linkedin.com/in/donatas-lisauskas-70a0711aa/" target="_blank">

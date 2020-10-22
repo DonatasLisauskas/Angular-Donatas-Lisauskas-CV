@@ -9,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 export class NavBarComponent implements OnInit {
 
   showLinksInBurger = true;
+  showContacts = false;
   toogleShowLinksInBurger(): void {
     this.showLinksInBurger = !this.showLinksInBurger;
   }
+  toogleShowContacts(): void {
+    this.showContacts = !this.showContacts;
+  }
+
   constructor() { }
 
   ngOnInit(): void {

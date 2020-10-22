@@ -8,8 +8,6 @@ import {style} from '@angular/animations';
 })
 export class SkillsContentComponent implements OnInit {
 
-  contacts = {city: 'City: Kaunas', email: 'Email: donliskas@gmail.com', phone: 'Phone: +37063855525'};
-
   techSkills = {
     languages: ['Java', 'HTML, CSS, JavaScript, TypeScript'],
     databases: ['MySQL, HSQLDB'],
