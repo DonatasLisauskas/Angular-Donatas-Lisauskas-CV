@@ -47,24 +47,27 @@
             </ul>
           </div>
         </div>
-        <div>
-          <button [ngClass]="{'button-Description-active-link' : showDevelopedSkills}" class="button-Description"
-                  (click)="toggleDevelopedSkills()" target="_blank" style="cursor: pointer">Developed skills:
-          </button>
-          <div *ngIf="showDevelopedSkills" target="_blank" style="cursor: pointer">
-            <ul (click)="toggleDevelopedSkills()">
-              <li *ngFor="let skillsWORK of developedSkillsWORK"># {{skillsWORK}}</li>
-            </ul>
+
+        <div [ngClass]="{'text-top-off-2' : showContentPigu}" >
+          <div>
+            <button [ngClass]="{'button-Description-active-link' : showDevelopedSkills}" class="button-Description"
+                    (click)="toggleDevelopedSkills()" target="_blank" style="cursor: pointer">Developed skills:
+            </button>
+            <div *ngIf="showDevelopedSkills" target="_blank" style="cursor: pointer">
+              <ul (click)="toggleDevelopedSkills()">
+                <li *ngFor="let skillsWORK of developedSkillsWORK"># {{skillsWORK}}</li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div>
-          <button [ngClass]="{'button-Description-active-link' : showAchievementsPIGU}" class="button-Description"
-                  (click)="toggleAchievements()" target="_blank" style="cursor: pointer">Achievements:
-          </button>
-          <div *ngIf="showAchievementsPIGU" target="_blank" style="cursor: pointer">
-            <ul (click)="toggleAchievements()">
-              <li style="padding-bottom: 25px"># {{achievementPIGU}}</li>
-            </ul>
+          <div>
+            <button [ngClass]="{'button-Description-active-link' : showAchievementsPIGU}" class="button-Description"
+                    (click)="toggleAchievements()" target="_blank" style="cursor: pointer">Achievements:
+            </button>
+            <div *ngIf="showAchievementsPIGU" target="_blank" style="cursor: pointer">
+              <ul (click)="toggleAchievements()">
+                <li style="padding-bottom: 25px"># {{achievementPIGU}}</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

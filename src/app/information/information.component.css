@@ -115,6 +115,9 @@ hr {
 .text-top-off {
   margin-bottom: 8%;
 }
+.text-top-off-2 {
+   margin-bottom: 8%;
+ }
 
 @media screen and (max-width: 992px) {
   .information-title-bold {
