@@ -1,0 +1,45 @@
+<div [ngClass]="['work-exp-section']">
+  <div style="margin-bottom: 40px">
+    <div>
+      <p class="work-exp-title-bold">WORK EXPERIENCE</p>
+      <button [ngClass]="{'work-exp-button-Position-active-link' : showContentPigu}" target="_blank" style="cursor: pointer" (click)="toggleContentPigu()"
+              class="work-exp-button-Position">Sales Manager</button>
+      <p class="work-exp-title-3-italic">UAB "Pigu.lt" | Aug 2018 - Sept 2020</p>
+    </div>
+    <div *ngIf="showContentPigu" class="work-exp-skill-container">
+      <div>
+        <button [ngClass]="{'work-exp-button-Description-active-link' : showResponsibilities}" class="work-exp-button-Description"
+                (click)="toggleResponsibilities()" target="_blank" style="cursor: pointer">Responsibilities:
+        </button>
+        <div *ngIf="showResponsibilities" target="_blank" style="cursor: pointer">
+          <ul (click)="toggleResponsibilities()">
+            <li *ngFor="let resp of responsibilitiesWORK"># {{resp}}</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div>
+          <button [ngClass]="{'work-exp-button-Description-active-link' : showDevelopedSkills}" class="work-exp-button-Description"
+                  (click)="toggleDevelopedSkills()" target="_blank" style="cursor: pointer">Developed skills:
+          </button>
+          <div *ngIf="showDevelopedSkills" target="_blank" style="cursor: pointer">
+            <ul (click)="toggleDevelopedSkills()">
+              <li *ngFor="let skillsWORK of developedSkillsWORK"># {{skillsWORK}}</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <button [ngClass]="{'work-exp-button-Description-active-link' : showAchievementsPIGU}" class="work-exp-button-Description"
+                  (click)="toggleAchievements()" target="_blank" style="cursor: pointer">Achievements:
+          </button>
+          <div *ngIf="showAchievementsPIGU" target="_blank" style="cursor: pointer">
+            <ul (click)="toggleAchievements()">
+              <li style="padding-bottom: 25px"># {{achievementPIGU}}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+</div>

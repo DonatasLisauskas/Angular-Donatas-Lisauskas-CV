@@ -1,0 +1,32 @@
+<div [ngClass]="['education-section']">
+  <div>
+    <div>
+      <div>
+        <p class="education-title-bold" style=" margin-top: 20px">EDUCATION</p>
+        <button [ngClass]="{'education-button-Position-active-link' : showContentSDA}" target="_blank"
+                style="cursor: pointer"
+                (click)="toggleContentSDA()" class="education-button-Position">Software Development Academy
+        </button>
+        <p class="education-title-3-italic">Full - Stack of Java (353 hours) | Apr 2020 - Feb 2021</p>
+      </div>
+      <div *ngIf="showContentSDA" target="_blank" style="cursor: pointer">
+        <ul (click)="toggleContentSDA()">
+          <li>{{lecturesSDA}}</li>
+        </ul>
+        <p [ngClass]="{'education-button-Description-active-link' : showAchievementSDA}" class="education-button-Description"
+           target="_blank" style="cursor: pointer"
+           (click)="toggleAchievements2()">Achievements:</p>
+        <div *ngIf="showAchievementSDA">
+          <ul (click)="toggleAchievements2()">
+            <li># {{achievementSDA}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p class="education-title-2-bold">Kaunas University of Technology</p>
+      <p class="education-title-3-italic">Bachelor's degree Food science and technologies | Sep 2014 - Jun 2018</p>
+    </div>
+    <hr>
+  </div>
+</div>
