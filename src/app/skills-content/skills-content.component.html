@@ -1,5 +1,5 @@
 <div [ngClass]="['skills-section']">
-  <div [ngClass]="['text-top']">
+  <div>
     <div [ngClass]="['button-div-position']">
       <button [ngClass]="{'active-link' : showTechSkills}" target="_blank"
               (click)="toggleTechSkills()">TECHNOLOGICAL SKILLS</button>
@@ -41,8 +41,9 @@
       <button [ngClass]="{'active-link' : showLanguages}" target="_blank" style="cursor: pointer"
               (click)="toggleLanguages()">LANGUAGES</button>
       <div *ngIf="showLanguages" (click)="toggleLanguages()" target="_blank" style="cursor: pointer">
-        <ul [ngClass]="['text-top']"><li *ngFor="let lang of languages"># {{lang}}</li></ul>
+        <ul><li *ngFor="let lang of languages"># {{lang}}</li></ul>
       </div>
     </div>
+    <hr>
   </div>
 </div>

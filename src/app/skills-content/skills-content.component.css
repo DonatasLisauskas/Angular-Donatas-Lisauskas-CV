@@ -61,7 +61,10 @@ li {
   text-align: justify;
 }
 
-.text-top {
+hr {
+  display: flex;
+  border-top: 4px solid aliceblue;
+  margin-top: 4%;
   margin-bottom: 8%;
 }
 

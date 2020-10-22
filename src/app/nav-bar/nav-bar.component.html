@@ -1,6 +1,5 @@
 <header>
   <nav class="navbar navbar-expand-lg navbar-dark black fixed-top d-flex justify-content-between header-container ">
-
     <div class="d-flex ">
       <a class="navbar-brand" [routerLink]="['/about-me']"><img src="/assets/pics/159835266580050642.png" height="50" width="50"></a>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -9,7 +8,10 @@
             <a class="nav-link" [routerLink]="['/about-me']">ABOUT ME</a>
           </li>
           <li class="nav-item" [routerLinkActive]="['active']">
-            <a class="nav-link" [routerLink]="['/information-component']">EXPERIENCE</a>
+            <a class="nav-link" [routerLink]="['/education']">EDUCATION</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['active']">
+            <a class="nav-link" [routerLink]="['/workExp']">EXPERIENCE</a>
           </li>
           <li class="nav-item" [routerLinkActive]="['active']">
             <a class="nav-link" [routerLink]="['/tech-skills']">TECHNOLOGICAL SKILLS</a>
@@ -27,9 +29,7 @@
         </div>-->
       </div>
     </div>
-
     <div class="d-flex " *ngIf="showLinksInBurger">
-
       <ul class="navbar-nav social-links-container">
         <li class="nav-item">
           <a href="https://www.linkedin.com/in/donatas-lisauskas-70a0711aa/" target="_blank">
@@ -58,9 +58,12 @@
         </li>
       </ul>
     </div>
-    <button  (click)="toogleShowLinksInBurger()" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+    <button (click)="toogleShowLinksInBurger()" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/>
+      </svg>
     </button>
   </nav>
 </header>

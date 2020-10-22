@@ -41,6 +41,13 @@ ul {
   -webkit-transition: all 0.8s ease;
 }
 
+hr {
+  display: flex;
+  border-top: 4px solid black;
+  margin-top: 4%;
+  margin-bottom: 8%;
+}
+
 @media screen and (max-width: 992px) {
   .contacts-text-bold {
     font-size: 35px;
