@@ -3,13 +3,18 @@
     <div>
       <p class="work-exp-title-bold">WORK EXPERIENCE</p>
       <button [ngClass]="{'work-exp-button-Position-active-link' : showContentPigu}" target="_blank" style="cursor: pointer" (click)="toggleContentPigu()"
-              class="work-exp-button-Position">Sales Manager</button>
+              class="work-exp-button-Position">Sales Manager
+        <svg *ngIf="!showContentPigu" style="margin-left: 10px" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z"/></svg>
+        <svg *ngIf="showContentPigu" style="margin-left: 10px" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M23.245 20l-11.245-14.374-11.219 14.374-.781-.619 12-15.381 12 15.391-.755.609z"/></svg>
+      </button>
       <p class="work-exp-title-3-italic">UAB "Pigu.lt" | Aug 2018 - Sept 2020</p>
     </div>
     <div *ngIf="showContentPigu" class="work-exp-skill-container">
       <div>
         <button [ngClass]="{'work-exp-button-Description-active-link' : showResponsibilities}" class="work-exp-button-Description"
                 (click)="toggleResponsibilities()" target="_blank" style="cursor: pointer">Responsibilities:
+          <svg *ngIf="!showResponsibilities" style="margin-left: 10px" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z"/></svg>
+          <svg *ngIf="showResponsibilities" style="margin-left: 10px" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M23.245 20l-11.245-14.374-11.219 14.374-.781-.619 12-15.381 12 15.391-.755.609z"/></svg>
         </button>
         <div *ngIf="showResponsibilities" target="_blank" style="cursor: pointer">
           <ul (click)="toggleResponsibilities()">
@@ -21,6 +26,8 @@
         <div>
           <button [ngClass]="{'work-exp-button-Description-active-link' : showDevelopedSkills}" class="work-exp-button-Description"
                   (click)="toggleDevelopedSkills()" target="_blank" style="cursor: pointer">Developed skills:
+            <svg *ngIf="!showDevelopedSkills" style="margin-left: 10px" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z"/></svg>
+            <svg *ngIf="showDevelopedSkills" style="margin-left: 10px" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M23.245 20l-11.245-14.374-11.219 14.374-.781-.619 12-15.381 12 15.391-.755.609z"/></svg>
           </button>
           <div *ngIf="showDevelopedSkills" target="_blank" style="cursor: pointer">
             <ul (click)="toggleDevelopedSkills()">
@@ -31,6 +38,8 @@
         <div>
           <button [ngClass]="{'work-exp-button-Description-active-link' : showAchievementsPIGU}" class="work-exp-button-Description"
                   (click)="toggleAchievements()" target="_blank" style="cursor: pointer">Achievements:
+            <svg *ngIf="!showAchievementsPIGU" style="margin-left: 10px" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z"/></svg>
+            <svg *ngIf="showAchievementsPIGU" style="margin-left: 10px" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M23.245 20l-11.245-14.374-11.219 14.374-.781-.619 12-15.381 12 15.391-.755.609z"/></svg>
           </button>
           <div *ngIf="showAchievementsPIGU" target="_blank" style="cursor: pointer">
             <ul (click)="toggleAchievements()">

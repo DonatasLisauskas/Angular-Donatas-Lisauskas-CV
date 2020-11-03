@@ -1,40 +1,52 @@
 .skills-section {
-  background-color: rebeccapurple;
+  background-color: aliceblue;
   flex-direction: column;
   display: flex;
   padding-top: 80px;
-  padding-left:10%;
+  padding-left: 10%;
   padding-right: 10%;
   position: absolute;
   width: 100%;
   height: 100%;
   overflow: auto;
 }
-button {
-  color: aliceblue;
+
+.skills-title-bold {
+  color: Black;
   font-weight: bold;
   font-size: 45px;
-  margin-top: 1.1%;
+  padding: 0;
+  margin: 0;
+}
 
+button {
+  color: rebeccapurple;
+  font-weight: bold;
+  font-size: 40px;
+  padding-left: 0;
+  margin-top: 1.3%;
+  margin-bottom: 0;
   background: transparent;
   border: none;
-  cursor: pointer;
-  padding: 0;
+  fill: rebeccapurple;
 }
+
 button:hover {
   color: mediumspringgreen;
   -webkit-transition: all 0.8s ease;
+  fill: mediumspringgreen;
 }
 
 button:focus {
   border: none;
-  outline:none;
+  outline: none;
 }
 
 .active-link {
   color: mediumspringgreen;
-  font-size: 50px;
+  font-size: 45px;
   transition: all 0.5s ease;
+  fill: mediumspringgreen;
 }
 
 ul {
@@ -45,15 +57,15 @@ ul {
 
 li {
   list-style-type: none;
-  color: aliceblue;
+  color: rebeccapurple;
   font-size: 25px;
   margin-top: 0;
   margin-bottom: 1%;
   text-align: justify;
 }
 
-.pbold{
-  color: aliceblue;
+.pbold {
+  color: rebeccapurple;
   font-style: italic;
   font-weight: bold;
   font-size: 25px;
@@ -63,7 +75,7 @@ li {
 
 hr {
   display: flex;
-  border-top: 4px solid aliceblue;
+  border-top: 4px solid black;
   margin-top: 4%;
   margin-bottom: 8%;
 }
@@ -72,6 +84,7 @@ hr {
   button {
     font-size: 35px;
   }
+
   .active-link {
     font-size: 40px;
   }
@@ -81,14 +94,22 @@ hr {
   button {
     font-size: 25px;
   }
+
   .active-link {
     font-size: 27px;
   }
+
   li {
     list-style-type: none;
     font-size: 15px;
   }
-  .pbold{
+
+  .pbold {
     font-size: 15px;
+  }
+
+  svg {
+    width: 0;
+    height: 0;
   }
 }

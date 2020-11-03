@@ -67,11 +67,13 @@ hr {
   margin-bottom: 0;
   background: transparent;
   border: none;
+  fill: rebeccapurple;
 }
 
 .work-exp-button-Position:hover {
   color: mediumspringgreen;
   -webkit-transition: all 0.8s ease;
+  fill: mediumspringgreen;
 }
 
 .work-exp-button-Position:focus {
@@ -83,6 +85,7 @@ hr {
   color: mediumspringgreen;
   font-size: 45px;
   transition: all 0.5s ease;
+  fill: mediumspringgreen;
 }
 
 .work-exp-button-Description {
@@ -95,11 +98,13 @@ hr {
   text-align: justify;
   background: transparent;
   border: none;
+  fill: black;
 }
 
 .work-exp-button-Description:hover {
   color: mediumspringgreen;
   -webkit-transition: all 0.8s ease;
+  fill: mediumspringgreen;
 }
 
 .work-exp-button-Description:focus {
@@ -110,6 +115,7 @@ hr {
   color: mediumspringgreen;
   font-size: 30px;
   transition: all 0.5s ease;
+  fill: mediumspringgreen;
 }
 
 @media screen and (max-width: 992px) {
@@ -162,5 +168,9 @@ hr {
   }
   .work-exp-button-Description-active-link {
     font-size: 17px;
+  }
+  svg {
+    width: 0;
+    height: 0;
   }
 }

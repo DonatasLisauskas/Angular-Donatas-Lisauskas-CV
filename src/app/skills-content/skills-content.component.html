@@ -1,8 +1,11 @@
 <div [ngClass]="['skills-section']">
   <div>
     <div [ngClass]="['button-div-position']">
+      <p class="skills-title-bold">SKILLS</p>
       <button [ngClass]="{'active-link' : showTechSkills}" target="_blank"
-              (click)="toggleTechSkills()">TECHNOLOGICAL SKILLS</button>
+              (click)="toggleTechSkills()">TECHNOLOGICAL SKILLS
+        <svg *ngIf="!showTechSkills" style="margin-left: 10px" width="32" height="32" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z"/></svg>
+        <svg *ngIf="showTechSkills" style="margin-left: 10px" width="32" height="32" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M23.245 20l-11.245-14.374-11.219 14.374-.781-.619 12-15.381 12 15.391-.755.609z"/></svg></button>
       <div *ngIf="showTechSkills" (click)="toggleTechSkills()" target="_blank" style="cursor: pointer">
         <div>
           <p class="pbold">Languages:</p>
@@ -32,14 +35,18 @@
     </div>
     <div>
       <button [ngClass]="{'active-link' : showPersonalSkills}" target="_blank" style="cursor: pointer"
-              (click)="togglePersonalSkills()">PERSONALITY SKILLS</button>
+              (click)="togglePersonalSkills()">PERSONALITY SKILLS
+        <svg *ngIf="!showPersonalSkills" style="margin-left: 10px" width="32" height="32" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z"/></svg>
+        <svg *ngIf="showPersonalSkills" style="margin-left: 10px" width="32" height="32" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M23.245 20l-11.245-14.374-11.219 14.374-.781-.619 12-15.381 12 15.391-.755.609z"/></svg></button>
       <div *ngIf="showPersonalSkills" (click)="togglePersonalSkills()" target="_blank" style="cursor: pointer">
         <ul><li *ngFor="let perS of personalSkills"># {{perS}}</li></ul>
       </div>
     </div>
     <div>
       <button [ngClass]="{'active-link' : showLanguages}" target="_blank" style="cursor: pointer"
-              (click)="toggleLanguages()">LANGUAGES</button>
+              (click)="toggleLanguages()">LANGUAGES
+        <svg *ngIf="!showLanguages" style="margin-left: 10px" width="32" height="32" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z"/></svg>
+        <svg *ngIf="showLanguages" style="margin-left: 10px" width="32" height="32" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M23.245 20l-11.245-14.374-11.219 14.374-.781-.619 12-15.381 12 15.391-.755.609z"/></svg></button>
       <div *ngIf="showLanguages" (click)="toggleLanguages()" target="_blank" style="cursor: pointer">
         <ul><li *ngFor="let lang of languages"># {{lang}}</li></ul>
       </div>
