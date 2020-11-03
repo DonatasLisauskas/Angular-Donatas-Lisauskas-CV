@@ -56,10 +56,12 @@ hr {
   margin-bottom: 0;
   background: transparent;
   border: none;
+  fill: rebeccapurple;
 }
 .education-button-Position:hover {
   color: mediumspringgreen;
   -webkit-transition: all 0.8s ease;
+  fill: mediumspringgreen;
 }
 .education-button-Position:focus {
   border: none;
@@ -69,6 +71,7 @@ hr {
   color: mediumspringgreen;
   font-size: 45px;
   transition: all 0.5s ease;
+  fill: mediumspringgreen;
 }
 .education-button-Description {
   color: black;
@@ -80,11 +83,13 @@ hr {
   text-align: justify;
   background: transparent;
   border: none;
+  fill: black;
 }
 
 .education-button-Description:hover {
   color: mediumspringgreen;
   -webkit-transition: all 0.8s ease;
+  fill: mediumspringgreen;
 }
 
 .education-button-Description:focus {
@@ -95,6 +100,7 @@ hr {
   color: mediumspringgreen;
   font-size: 30px;
   transition: all 0.5s ease;
+  fill: mediumspringgreen;
 }
 @media screen and (max-width: 992px) {
   .education-title-bold {
@@ -146,5 +152,9 @@ hr {
   }
   .education-button-Description-active-link {
     font-size: 17px;
+  }
+  svg {
+    width: 0;
+    height: 0;
   }
 }
