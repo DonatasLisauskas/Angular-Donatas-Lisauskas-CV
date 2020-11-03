@@ -81,6 +81,11 @@ hr {
 }
 
 @media screen and (max-width: 992px) {
+
+  .skills-title-bold {
+    font-size: 35px;
+  }
+
   button {
     font-size: 35px;
   }
@@ -91,6 +96,11 @@ hr {
 }
 
 @media screen and (max-width: 450px) {
+
+  .skills-title-bold {
+    font-size: 25px;
+  }
+
   button {
     font-size: 25px;
   }
