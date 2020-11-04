@@ -13,8 +13,8 @@ export class SkillsContentComponent implements OnInit {
     databases: ['MySQL, HSQLDB'],
     frameworks: ['JDBC', 'Hibernate ORM', 'Angular', 'JavaFX', 'JUnit / JUnit5 / Jupiter'],
     otherSkills: ['OPP', 'TDD', 'Clean Code and good practices'],
-    tools: ['IntelliJ IDEA', 'MySQL Workbench', 'Visual Studio Code', 'Postman', 'GIT', 'Node.js'],
-    inFuture: ['Front - end technologies', 'Spring Framework', 'Agile & Scrum of project management']
+    /*tools: ['IntelliJ IDEA', 'MySQL Workbench', 'Visual Studio Code', 'Postman', 'GIT', 'Node.js'],*/
+    inFuture: [/*'Front - end technologies', */'Spring Framework', 'Agile & Scrum of project management']
   };
 
   personalSkills = ['Thoroughness', 'Creativity Skills', 'Goal-orientation', 'Analytical thinking',
